@@ -1,0 +1,22 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div> 
+        <h1> An error occourred during process...  </h1>
+        <div>@Model.ControllerName - @Model.ActionName</div>
+        <h4>@Model.Exception.Message</h4>
+        <div>@Model.Exception.StackTrace</div>
+    </div>
+</body>
+</html>

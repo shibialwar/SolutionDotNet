@@ -1,0 +1,39 @@
+﻿@model KC.SPARTA.Model.ViewModel.SampleModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SampleView</title>
+</head>
+<body>
+    <div> 
+        <h1>@Resources.Global.Greetings</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.data)
+                {
+                    <tr>
+                       
+                        <td>@item.Id</td>
+                        <td>@item.Timestamp.ToString()</td>
+                      
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
