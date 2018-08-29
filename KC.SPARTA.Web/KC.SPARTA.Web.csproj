@@ -157,10 +157,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\sample.mdf" />
-    <Content Include="App_Data\sample_log.ldf">
-      <DependentUpon>sample.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <None Include="Nlog.config" />
     <Content Include="Web.config">
@@ -224,6 +220,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="ClientScripts\" />
     <Folder Include="Images\" />
   </ItemGroup>

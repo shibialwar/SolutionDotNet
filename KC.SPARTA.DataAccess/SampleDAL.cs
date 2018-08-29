@@ -20,7 +20,7 @@ namespace KC.SPARTA.DataAccess
             IEnumerable<Log> result;
 
             result = from rec in _connection.Db.Logs select rec;
-                
+
             var rtn = _mapper.Map<IEnumerable<Log>, IEnumerable<SampleModel>>(result);
 
 

@@ -119,7 +119,6 @@
       <DependentUpon>Sample.edmx</DependentUpon>
       <LastGenOutput>Sample.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="sample.mdf" />
     <Content Include="Sample.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Sample.edmx</DependentUpon>
